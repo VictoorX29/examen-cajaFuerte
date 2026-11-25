@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: whitesmoke;
+	padding: 8px;
+}
+body {
+	max-width: 1080px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.seccion {
+	padding: 24px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 1px 0px 8px gray;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.titulo {
+	background-color: #2f80ed;
+	padding: 8px;
+	color: white;
+	text-align: center;
+	border-radius: 4px;
+}
+#cardsCoches {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 12px;
+}
+#cardsCoches img {
+	width: 100%;
+	height: auto;
+	max-height: 200px;
+	object-fit: cover;
+}
+.card {
+	padding: 16px;
+	background-color: whitesmoke;
+	border-radius: 8px;
+	box-shadow: 1px 0px 8px gray;
+	cursor: pointer;
+	transition: transform 200ms ease-in;
+}
+.card:hover {
+	transform: translateY(-5px);
+	background-color: rgb(240, 240, 240);
+}
+.card-body {
+	margin-top: 8px;
+	display: inline-flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.card-body h3 {
+	color: #2f80ed;
+}
+.divSlcs {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 12px;
+}
+.divSlc {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 100%;
+	gap: 4px;
+}
+.btn {
+	width: fit-content;
+	margin-inline: auto;
+	padding: 8px 12px;
+	color: white;
+	border: 0;
+	transition: all 200ms ease;
+	cursor: pointer;
+}
+#btnComparar {
+	background-color: blue;
+}
+#btnComparar:hover {
+	background-color: rgba(0, 0, 255, 0.8);
+	transform: scale(95%);
+}
+#btnComparar:active {
+	background-color: rgba(0, 0, 255, 0.9);
+	transform: scale(105%);
+}
+#btnBuscar {
+	background-color: green;
+}
+#btnBuscar:hover {
+	background-color: rgba(0, 128, 0, 0.8);
+	transform: scale(95%);
+}
+#btnBuscar:active {
+	background-color: rgba(0, 128, 0, 0.9);
+	transform: scale(105%);
+}

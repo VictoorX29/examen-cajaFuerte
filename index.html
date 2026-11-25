@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Examen Caja Fuerte</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section class="seccion">
+			<h2 class="titulo">Tarjetas coches</h2>
+			<div id="cardsCoches"></div>
+		</section>
+		<section class="seccion">
+			<h2 class="titulo">Comparación coches</h2>
+			<div class="divSlcs">
+				<div class="divSlc">
+					<label for="slcCoche1">Selecciona el primer coche</label>
+					<select name="slcCoche1" id="slcCoche1"></select>
+				</div>
+				<div class="divSlc">
+					<label for="slcCoche2">Selecciona el segundo coche</label>
+					<select name="slcCoche2" id="slcCoche2"></select>
+				</div>
+				<div class="divSlc">
+					<button class="btn" id="btnComparar">Comparar</button>
+				</div>
+			</div>
+			<p class="error" id="errComparar"></p>
+			<div id="resComparar"></div>
+		</section>
+		<section class="seccion">
+			<h2 class="titulo">Buscar Potencia</h2>
+			<div>
+				<label>
+					<span>Buscar coches con más de: (CV)</span>
+					<input type="number" id="iptBuscar" min="0" placeholder="1200" />
+				</label>
+			</div>
+			<div>
+				<button class="btn" id="btnBuscar">Buscar</button>
+			</div>
+			<p class="error" id="errBuscar"></p>
+
+			<div id="resBuscar"></div>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
